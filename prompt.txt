@@ -1,0 +1,15 @@
+reservations テーブルを使って予約管理機能を実装してください。
+
+- Supabase から reservations を取得してテーブル表示
+- テーブル列は以下を表示
+  - user_name, course_title, reservation_datetime_1, participants, status, staff, created_at
+- ステータスは色分け表示（新規, 確認済み, キャンセル, 完了）
+- 詳細画面では全カラムをフォームで表示（編集可能）
+- 作成画面ではフォームから新規予約を追加可能
+- フォーム項目はカラムデータ型に応じて自動で入力フィールドを選択
+  - text → input text
+  - integer → input number
+  - timestamptz → input datetime-local
+  - text[] → checkbox group
+  - status → select
+- フォームのラベルは Supabase のカラムコメントを利用

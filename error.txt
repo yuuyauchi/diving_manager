@@ -1,0 +1,5 @@
+Uncaught TypeError: Failed to construct 'URL': Invalid URL
+    at new SupabaseClient (@supabase_supabase-js.js?v=c9b192bb:7567:21)
+    at createClient (@supabase_supabase-js.js?v=c9b192bb:7746:10)
+    at supabaseClient.ts:7:25
+上記エラーが発生していました。原因を教えて
