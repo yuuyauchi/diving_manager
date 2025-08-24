@@ -10,7 +10,11 @@ const Header = () => {
     const getUser = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
-        setUserEmail(user.email);
+        if (user.email) {
+          setUserEmail(user.email);
+        } else {
+          setUserEmail(null);
+        }
       }
     };
     getUser();
