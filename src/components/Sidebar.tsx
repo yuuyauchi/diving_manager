@@ -1,6 +1,10 @@
 import { NavLink } from 'react-router-dom';
 
-const Sidebar = () => {
+interface SidebarProps {
+  className?: string;
+}
+
+const Sidebar = ({ className }: SidebarProps) => {
   const navLinks = [
     { path: '/reservations', name: '予約一覧' },
     { path: '/calendar', name: '予約カレンダー' },
@@ -11,7 +15,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <nav className="w-64 bg-gray-900 text-white p-4 space-y-2">
+    <nav className={`w-64 bg-gray-900 text-white p-4 space-y-2 ${className}`}>
       {navLinks.map((link) => (
         <NavLink
           key={link.path}

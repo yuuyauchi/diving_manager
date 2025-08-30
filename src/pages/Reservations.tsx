@@ -89,7 +89,7 @@ const Reservations = () => {
         </Link>
       </div>
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <table className="min-w-full md:min-w-max bg-white shadow-md rounded-lg overflow-hidden">
           <thead className="bg-gray-800 text-white">
             <tr>
               <th className="py-3 px-4 text-left">ユーザー名</th>
